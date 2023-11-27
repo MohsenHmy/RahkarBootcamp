@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+
+    <script>
+        // 1
+        function Nums() {
+            let li = [3, -5, 6, -2];
+            var Neg = 0;
+            var pos = 0;
+
+            for(let i in li){
+                if (li[i] <= 0){
+                    Neg += li[i];
+                }
+                if (li[i] > 0){
+                    pos += li[i];                    
+                }
+            }
+            
+            console.log(pos)
+            console.log(Neg)
+        };
+        // 2
+        function evenNums(){
+            evenN=[]
+            for(let i = 100; i<=1000; i++){
+                if (i%2 == 0){
+                    evenN.push(i)
+                }
+            }
+            console.log(evenN)
+        };
+        // 3
+        function operations(){
+            let root = []
+            let squre = []
+            let cube = []
+            for(let i =0; i<=20; i++){
+                root.push(Math.sqrt(i))
+                squre.push(i*i)
+                cube.push(i*i*i)
+            }
+            console.log(root)
+            console.log(squre)
+            console.log(cube)
+        };
+        // 4
+        function odd(){
+            let number = 15
+            odd = []
+            for (i =1; i <=number; i++){
+                if(i%2 != 0){
+                    odd.push(i)
+                }
+            }
+            console.log(odd)
+        }
+        // 5
+        function factoriel(){
+            let number = 5
+            let fact= 1;
+            for (i =1; i <=number; i++){
+                fact *= i
+            }
+            console.log(fact)
+        }
+        // 6
+        function gcd(){
+            a = 8
+            b = 12
+            while(b != 0 && a != 0){
+                temp = b
+                b = a%b
+                a = temp
+            }
+            console.log(a)
+        }
+        // 7
+        function divAble(){
+            a = 12
+            b = 3
+            flag = false 
+            if(a%b == 0 || b%a == 0){
+                flag = true
+            }
+            
+            console.log(flag)
+        }
+        // 8
+        function gcd(){
+            a = 8
+            b = 12
+            while(b != 0 && a != 0){
+                temp = b
+                b = a%b
+                a = temp
+            }
+            console.log(a)
+        };
+        // 9
+        function div7And3(){
+            listofNums=[]
+            sum = 0
+            count = 0
+            for(let i =300; i>=0; i--){
+                if(i%7 == 0 && i%3==0){
+                    listofNums.push(i)
+                    sum += i
+                    count ++
+                }
+            }
+            console.log(listofNums, sum, count)
+        };
+
+        // 10
+        function toThree(){
+            listOfNumstoThree=[]
+            for (let i = 100; i < 1000; i++) {
+                let a = parseInt(i / 100);
+                let b = parseInt((i % 100) / 10);
+                let c = parseInt(i % 10);
+                    if (i == (Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3))) {
+                        listOfNumstoThree.push(i)
+                    }
+                }
+            console.log(listOfNumstoThree)
+        };
+
+        // 11
+        function numCount(){
+            count = 0;
+            num =1234
+            while(num != 0){
+                num = parseInt(num / 10)
+                ++count
+            }
+            console.log(count)
+        }
+
+        //12
+        function fourEcone(){
+            liof12 = []
+            sum=0
+            for(let i=100; i<1000; i++){
+                if(parseInt(i%10)==4){
+                    liof12.push(i)
+                    sum += i
+                }
+            }
+            console.log(liof12, sum)
+        }
+
+        // 13
+        function numOneByOne(){
+            let num = 598;
+            let ones = num % 10;
+            let tens = Math.floor((num % 100) / 10);
+            let hundreds = Math.floor(num / 100);
+            console.log(ones, tens, hundreds);
+        }
+
+        // 14
+        function evenOdd(){
+            let num =876
+            let evenCountOddPosition = 0;
+            let evenCountEvenPosition = 0;
+            
+            for (let i = 0; i < num.length; i++) {
+                if (i % 2 === 0 && num[i] % 2 === 0) {
+                    evenCountEvenPosition++;
+                } else if (i % 2 !== 0 && num[i] % 2 === 0) {
+                    evenCountOddPosition++;
+                }
+            }
+            console.log(evenCountEvenPosition, evenCountOddPosition);
+        }
+
+        Nums()
+        evenNums()
+        operations()
+        odd()
+        factoriel()
+        gcd()
+        divAble()
+        div7And3()
+        toThree()
+        numCount()
+        fourEcone()
+        numOneByOne()
+        evenOdd()
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
