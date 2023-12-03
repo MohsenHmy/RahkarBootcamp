@@ -1,0 +1,30 @@
+<p>third-paragraph works!</p>
+<!-- <form class="wrapper">
+
+    <p [ngClass]="{'isLoggedIn': isUserLoggedIn, 'isLoggedOut': !isUserLoggedIn}" 
+    [ngStyle]="{'font-size.px': fontSizeDefault, 'background-color': getBackGroundColor()}">User Logged-in</p>
+
+    <div>
+        <label for="fname">First Name: </label>
+        <input name="fname" type="text" placeholder="FirstName..." (input)="onChangeFirstName($event)">
+    </div>
+
+    <div>
+        <label for="lastname">Last Name: </label>
+        <input name="lastname" type="text" placeholder="FirstName..." (input)="onChangeLastName($event)">
+    
+    </div>
+
+    <button type="button" (click)="onHandleClick()">submit form</button>
+</form>
+
+<p>=====================================================================</p> -->
+<ul>
+    <li *ngFor="let item of menuListItems">{{ item }}</li>
+</ul>
+
+<input type="text" (input)="onChangeLastName($event)">
+<button type="button" (click)="onHandleClick()">Submit</button>
+
+
+

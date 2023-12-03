@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 150px;
+    margin-top: 10px;
+}
+
+input{
+    margin: 5px;
+}
+
+.isLoggedIn{
+    color: red;
+}
+
+.isLoggedOut{
+    color: green;
+}

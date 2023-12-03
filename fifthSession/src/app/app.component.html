@@ -1,0 +1,35 @@
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-12 header"></div>
+      <div class="col bg-danger">sdadfds</div>
+      <div class="col bg-info">sdfadf</div>
+      <div class="col bg-light">dfasdfasf</div>
+      <div class="col">sdfadsfasdfa</div>
+    </div>
+  </div>
+  -->
+<!-- <form [formGroup]="form">
+  <input type="text" formControlName="username">
+  <input type="password" formControlName="password">
+  <button (click)="onClick()">Submit</button>
+</form> -->
+
+<div class="fullWrapper">
+  <h1>Login Page Test</h1>
+  <div class="wrapper1 text-center m-5 mt-0 pt-3">
+    <form [formGroup]="login">
+      <input class="col-8" type="text" formControlName="username">
+      <input class="col-8" type="password" formControlName="password">
+      <button (click)="onClick()">Login</button>
+    </form>
+  </div>
+  
+  <div class="wrapper2 text-center m-5 ">
+    <form>
+      <input class="col-8" type="text" [formControl]="outeruser">
+      <input class="col-8" type="password" [formControl]="outerpass">
+      <button (click)="onClick2()">Login</button>
+    </form>
+  </div>
+  
+</div>

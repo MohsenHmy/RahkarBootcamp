@@ -1,0 +1,17 @@
+<p>Welcome to Angular</p>
+<app-navbar *ngIf="navBarIsshowing"></app-navbar>
+<app-footer></app-footer>
+<p>====================================================================</p>
+<p>{{name}}</p>
+<p>{{age}}</p>
+<p>{{name}}, {{age}}</p>
+<p>{{getName()}}</p>
+<p>{{getName2('Kamal')}}</p>
+<p>{{subtract(3, 5)}}</p>
+<p>====================================================================</p>
+
+<p>{{ "It's just reviwing" }}</p>
+<input (focus)="onHandleFocus($event)" (input)="printEvent($event)" placeholder="Type something..">
+<p>====================================================================</p>
+<app-navbar (ghoti)="onHandleGhoti($event)"></app-navbar>
+<app-navbar [baste]="name" (ghoti)="onHandleGhoti($event)"></app-navbar>

@@ -1,0 +1,46 @@
+
+h1{
+    text-align: center;
+}
+
+#adder{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#adder>input{
+    width: 40%;
+}
+
+#list{
+    width: 50%;
+    margin-left: 27%;
+}
+#list ul{
+    display: flex;
+    justify-content: flex-start;
+    line-height: 30px;
+}
+#list ul li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+ul{
+    width: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul > button{
+    height: 20px;
+    width: 50px;
+}
+
+.active{
+    color: red;
+}

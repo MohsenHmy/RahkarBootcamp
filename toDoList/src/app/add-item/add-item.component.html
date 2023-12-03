@@ -1,0 +1,12 @@
+<h1>To Do list</h1>
+<div id="adder">
+    <input (input)="onDoAdded($event)" placeholder="What do you want to do...">
+    <button (click)="onClick()">add to list</button>
+</div>
+
+<div id="list">
+    <ul>
+        <li *ngFor="let item of toDoList" [ngClass]="{'active': isDone, 'notActive': !isDone}">{{ item }}
+    <button (click)="doneItem()">Finished</button> <button (click)="removeItem(item)">Remove</button></li>
+    </ul>
+</div>

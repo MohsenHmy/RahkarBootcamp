@@ -1,0 +1,10 @@
+<p>Wlecome to Angular</p>
+<app-first-paragraph *ngIf="firstIsActive"></app-first-paragraph>
+<p>
+  ===============================================================
+</p>
+<app-second-paragraph [lastName]="lastname"></app-second-paragraph>
+<p>
+  ===============================================================
+</p>
+<app-third-paragraph (lastnameChange)="onHandleLastname($event)"></app-third-paragraph>
