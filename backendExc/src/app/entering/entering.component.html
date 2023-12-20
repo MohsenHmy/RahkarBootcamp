@@ -1,0 +1,32 @@
+<!-- Section: Split screen -->
+<section class="h-75">
+
+    <div class="container-fluid vh-100 overflow-hidden">
+        <div class="row text-center bg-info p-2 h-100">
+            <h1 class="pb-3">Dice game</h1>
+            <div class="col-sm-6 h-100 bg-danger d-flex justify-content-center flex-column">
+                <h2>Player One</h2>
+
+                <form [formGroup]="playerForm" class="d-flex justify-content-center flex-column">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" formControlName="firstPlayer">
+                    <a  routerLink="/theGame" routerLinkActive="active"><button type="button" class="btn btn-dark col-4 mt-2" (click)="submit()">submit</button></a>
+                </form>
+
+            </div>
+            <div class="col-sm-6 h-100 bg-primary d-flex justify-content-center flex-column">
+                <h2>Player Two</h2>
+
+                <form [formGroup]="playerForm" class="d-flex justify-content-center flex-column">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" formControlName="secondPlayer">
+                    <a routerLink="/theGame" routerLinkActive="active"><button type="button" class="btn btn-dark col-4 mt-2" (click)="submit()">submit</button></a>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Section: Split screen -->
+<router-outlet></router-outlet>

@@ -1,0 +1,28 @@
+<!-- Section: Split screen -->
+<section class="h-75">
+
+    <div class="container-fluid vh-100 overflow-hidden">
+        <div class="row text-center bg-info p-2 h-100">
+        <h1 class="pb-3">Dice game</h1>
+            <div class="col-sm-6 h-100 bg-danger d-flex align-items-center flex-column p-5">
+                <h2>Player One</h2>
+                <p>Score:</p>
+                <div class="col-sm-2 bg-light m-3 p-1">
+                    {{ firstPlayerScore }}
+                </div>
+            </div>
+            <div class="col-sm-6 h-100 bg-primary d-flex align-items-center flex-column p-5">
+                <h2>Player Two</h2>
+                <p>Score:</p>
+                <div class="col-sm-2 bg-light m-3 p-1">
+                    {{ SecondPlayerScore }}
+                </div>
+                <button type="button" class="btn btn-secondary" (click)="rollTheDice()" [disabled]="isDisabled">
+                    roll dice: <span>{{ diceValue }}</span></button>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Section: Split screen -->
+<router-outlet></router-outlet>
