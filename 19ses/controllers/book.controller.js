@@ -15,4 +15,12 @@ exports.addBook = async (req, res) => {
     } catch (error) {
         res.json({ message: error }, 400);
     }
+
+    exports.joinedTables = async (req, res) => {
+
+        await User.hasMany(book,{foreignKey:'id'});
+        await book.belongsTo(User,{foreignKey:'user_id'});
+        let data=await book.findAll({ include:[User]});
+        res.json(data)
+    }
 }
