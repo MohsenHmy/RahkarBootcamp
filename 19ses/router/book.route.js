@@ -3,6 +3,7 @@ const { addBook } = require('../controllers/book.controller');
 
 const router = express.Router()
 
-router.post('/addBook', addBook);
+router.post('/addBook', addBook)
+      .post('/getAll', joinedTables);
 
 module.exports = router
